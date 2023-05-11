@@ -42,7 +42,7 @@ class UI(QMainWindow):
 
 	#Check Win Function
 	def checkWin(self):
-		#Across
+		#Horizontal
 		if self.button1.text() != "" and self.button1.text() == self.button4.text() and self.button1.text() == self.button7.text():
 			self.win(self.button1, self.button4, self.button7)
 
@@ -52,7 +52,7 @@ class UI(QMainWindow):
 		if self.button3.text() != "" and self.button3.text() == self.button6.text() and self.button3.text() == self.button9.text():
 			self.win(self.button3, self.button6, self.button9)
 
-		#Down
+		#Vertical
 		if self.button1.text() != "" and self.button1.text() == self.button2.text() and self.button1.text() == self.button3.text():
 			self.win(self.button1, self.button2, self.button3)
 
